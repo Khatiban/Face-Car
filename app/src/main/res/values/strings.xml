@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Face Car</string>
+    <string name="title_activity_start">Face Car</string>
+    <string name="title_activity_home">Home</string>
+    <string name="download">دانلود</string>
+    <string name="like">لایک</string>
+    <string name="share">ارسال به</string>
+</resources>

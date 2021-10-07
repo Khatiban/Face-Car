@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right">
+
+    <ImageView
+        android:id="@+id/pad_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pad_1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/pad_1"
+        android:background="@color/colorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_face_car_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="Face Car"
+                android:textColor="@color/colorPrimary"
+                android:textSize="35sp" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more012"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_face_car_menu"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/txt_menu_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_1"
+                        android:text="خانه"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/img_menu_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_menu_home_on" />
+
+                </RelativeLayout>
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more013"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more012"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_menu_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bookmark_menu" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_2"
+                        android:text="نشانه شده"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more014"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more013"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_post_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_menu_3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ad_menu" />
+
+
+                    <TextView
+                        android:id="@+id/txt_menu_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_3"
+                        android:text="آگهی های من"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more015"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more014"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_menu_4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_menu" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_4"
+                        android:text="پروفایل"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more016"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more015"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_menu_5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/support_menu" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_5"
+                        android:text="پشتیبانی"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more017"
+                app:rv_color="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more016"
+                app:rv_type="simpleRipple">
+
+                <RelativeLayout
+                    android:id="@+id/txt_menu_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="15dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_menu_6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/info_menu" />
+
+                    <TextView
+                        android:id="@+id/txt_menu_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/img_menu_6"
+                        android:text="درباره ما"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:src="@drawable/back2" />
+
+    </RelativeLayout>
+
+    <tcking.github.com.giraffeplayer2.VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/rl1" />
+
+    <ScrollView
+        android:id="@+id/scroll_video"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/video_view"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+                <TextView
+                    android:id="@+id/txt_view_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="0"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/text_view_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/txt_view_video"
+                    android:gravity="center"
+                    android:text="بازدید"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/text_view_video"
+                    android:src="@drawable/heart_on" />
+
+                <TextView
+                    android:id="@+id/txt_like_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@+id/like"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btn_share_video"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/iconshare" />
+
+                <ImageView
+                    android:id="@+id/btn_download_video"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/btn_share_video"
+                    android:src="@drawable/icondownload" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_sub_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl2"
+                android:padding="15dp"
+                android:text="توضیحات ...................................................................................................................................................................................................................................................................................................."
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/null1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_sub_video"
+                android:layout_marginTop="5dp"
+                android:background="@color/dark" />
+
+            <TextView
+                android:id="@+id/txt_list_video_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/null1"
+                android:padding="15dp"
+                android:text="ویدیو های تصادفی"
+                android:textSize="12sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecycleList_list_video_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_list_video_1" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/colorPrimary"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>

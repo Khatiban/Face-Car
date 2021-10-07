@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnItemHomeNews"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:src="@color/colorAccent"
+        app:siShape="@drawable/shape_rounded_rectangle" />
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/picItemHomeNews"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:src="@drawable/shadow_2"
+        app:siShape="@drawable/shape_rounded_rectangle2" />
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/backShadow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="170dp"
+        android:src="@color/shadow"
+        app:siShape="@drawable/shape_rounded_rectangle3" />
+
+    <ImageView
+        android:id="@+id/picItemHomeNewsView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="170dp"
+        android:padding="6dp"
+        android:src="@drawable/view" />
+
+    <TextView
+        android:id="@+id/txtItemHomeNewsView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/picItemHomeNewsView"
+        android:gravity="center"
+        android:text="22"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/picItemHomeNewsLike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_toRightOf="@+id/txtItemHomeNewsView"
+        android:padding="8dp"
+        android:src="@drawable/heart_on" />
+
+    <TextView
+        android:id="@+id/txtItemHomeNewsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/picItemHomeNewsLike"
+        android:gravity="center"
+        android:text="20"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtItemHomeNewsTit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picItemHomeNews"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="5dp"
+        android:text="عنوان"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtItemHomeNewsSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemHomeNewsTit"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:text="توضیحات"
+        android:textSize="10sp" />
+
+</RelativeLayout>
